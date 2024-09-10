@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: #ffc966;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .menu-button {
+            position: fixed;
+            top: 1vh;
+            left: 1vh;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            z-index: 1000;
+            width: 4vw;
+            height: 4vw;
+        }
+        .menu-icon {
+            left: -10%;
+            width: 220%;
+            height: 180%;
+            display: block;
+            transform: translateX(-15px);
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: white;
+            padding: 30px;
+            padding-inline: 20px;
+            border-radius: 20px;
+            box-shadow: 4px 4px rgb(0, 2, 65);
+            font-family: cursive;
+            width: 280px;
+        }
+        .heading {
+            font-size: 25px;
+            text-align: center;
+            font-weight: 600;
+            font-family: cursive;
+        }
+        .form button {
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: #FEB702;
+            box-shadow: 2px 3px rgb(0, 2, 65);
+            color: rgb(0, 0, 0);
+            font-size: medium;
+            font-weight: 600;
+            transition: 400ms;
+            font-family: cursive;
+        }
+        .form button:hover {
+            background-color: #FEB702;
+            transition: 400ms;
+            cursor: pointer;
+        }
+        .input {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-style: double;
+            border-color: black;
+            font-size: 15px;
+            box-shadow: 2px 3px rgb(0, 2, 65);
+            font-family: cursive;
+            background-color:#FEB702;
+        }
+        .forgot,
+        a {
+            padding-top: 10px;
+            color: rgba(0, 0, 0, 0.994);
+            font-family: cursive;
+            text-decoration: none;
+            transition: 400ms;
+        }
+        .forgot a:hover {
+            color: rgba(0, 0, 0, 0.703);
+            transition: 400ms;
+        }
+        .Mail,
+        .Password {
+            font-size: 16px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="menu-button" onclick="window.location.href='main_web.html';">
+            <img src="picture/logo.png" alt="Menu Icon" class="menu-icon">
+        </button>
+    </div>
+
+    <form class="form" id="loginForm">
+        <span class="heading">Login</span>
+        <span class="LoginName">Login Name</span>
+        <input placeholder="Enter Login Name" type="text" class="input" id="loginName" name="loginName" required />
+        <span class="Password">Password</span>
+        <input placeholder="Enter Password" type="password" class="input" id="password" name="password" required />
+        <span class="forgot"><a href="">forgot password?</a></span>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submitted');
+
+            const loginName = document.getElementById('loginName').value;
+            const password = document.getElementById('password').value;
+            console.log('Attempting login with login name:', loginName);
+
+            fetch('login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `loginName=${encodeURIComponent(loginName)}&password=${encodeURIComponent(password)}`
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response data:', data);
+                if (data.success) {
+                    console.log('Login successful, redirecting to:', data.redirect);
+                    window.location.href = data.redirect;
+                } else {
+                    console.log('Login failed:', data.message);
+                    alert('Login failed: ' + data.message);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

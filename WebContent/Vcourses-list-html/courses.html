@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Speaking Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #FFF9E6; /* Màu nền của toàn bộ trang */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Tùy chọn kiểu chữ */
+    }
+    </style>
+</head>
+<body>
+           <!-- Khóa học web-->
+         <div class="Khóa học">
+            <h1>Thông tin các khóa học mà trung tâm đang triển khai<br>__________________________________________________</h1>
+            <div class="table-container">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã môn học</th>
+                            <th>Tên lớp học</th>
+                            <th>Giá</th>
+                            <th>Quá trình</th>
+                            <th>Số lượng học sinh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SB1</td>
+                            <td>Speaking for beginner 1</td>
+                            <td>3.999.000</td>
+                            <td>6 tháng</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SB2</td>
+                            <td>Speaking for beginner 2</td>
+                            <td>3.999.000</td>
+                            <td>6 tháng</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SA1</td>
+                            <td>Speaking advanced</td>
+                            <td>1.999.000</td>
+                            <td>3 tháng</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SS1</td>
+                            <td>Speaking for self-study learners</td>
+                            <td>99.000</td>
+                            <td>3 bài chữa free</td>
+                            <td>No limit</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>WB1</td>
+                            <td>Writing for beginner 1</td>
+                            <td>3.999.000</td>
+                            <td>6 tháng</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>WB2</td>
+                            <td>Writing for beginner 2</td>
+                            <td>3.999.000</td>
+                            <td>6 tháng</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>WA1</td>
+                            <td>Writing advanced</td>
+                            <td>1.999.000</td>
+                            <td>3 tháng</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>RL1</td>
+                            <td>Reading and Listening for beginner 1</td>
+                            <td>1.999.000</td>
+                            <td>6 tháng</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>RL2</td>
+                            <td>Reading and Listening for beginner 2</td>
+                            <td>1.999.000</td>
+                            <td>6 tháng</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>RL3</td>
+                            <td>Reading and Listening for beginner 3</td>
+                            <td>1.999.000</td>
+                            <td>6 tháng</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>RL4</td>
+                            <td>Reading and Listening medium level 1</td>
+                            <td>2.499.000</td>
+                            <td>6 tháng</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>RL5</td>
+                            <td>Reading and Listening medium level 2</td>
+                            <td>2.499.000</td>
+                            <td>6 tháng</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>RL6</td>
+                            <td>Reading and Listening Advanced</td>
+                            <td>2.999.000</td>
+                            <td>3 tháng</td>
+                            <td>8-10</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>RT6</td>
+                            <td>Road to 6.5 (all skills)</td>
+                            <td>9.999.000</td>
+                            <td>6 tháng</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>RT7</td>
+                            <td>Road to 7+ (only Writing & Speaking)</td>
+                            <td>4.999.000</td>
+                            <td>6 tháng</td>
+                            <td>10-15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>OC1</td>
+                            <td>Online class for Reading & Listening</td>
+                            <td>299.000</td>
+                            <td>1 tháng</td>
+                            <td>20-25</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>OS1</td>
+                            <td>Online class for Speaking for beginners</td>
+                            <td>999.000</td>
+                            <td>3 tháng</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>OS2</td>
+                            <td>Online class for Speaking for Medium</td>
+                            <td>1.499.000</td>
+                            <td>3 tháng</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>OW1</td>
+                            <td>Online class for Writing for beginners</td>
+                            <td>999.000</td>
+                            <td>3 tháng</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>OW2</td>
+                            <td>Online class for Writing advanced</td>
+                            <td>1.499.000</td>
+                            <td>3 tháng</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MT0</td>
+                            <td>Mock Test / Checkpoint for learners</td>
+                            <td>50.000</td>
+                            <td>2 buổi</td>
+                            <td>5-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1><strong>Đăng Kí Online</strong><br>_______________________________________________</h1>
+
+            <div id="web4-courses-wrapper">
+                <style>
+                    #web4-courses-wrapper {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    #courses-container {
+                        width: 100%;
+                        max-width: 75rem;
+                        margin: 0 auto;
+                        padding: 1.25rem;
+                    }
+                    .row {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 2.5rem;
+                        gap: 1rem;
+                    }
+                    .web4-course-container {
+                        flex: 0;
+                        min-width: 20%;
+                        max-width: 30%;
+                        min-height: 17vw;
+                        position: relative;
+                        border-radius: 1.5em;
+                        background-color: #FEB702;
+                        border: 0.1em solid black;
+                        padding: 0.8em;
+                        box-sizing: border-box;
+                        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.19), 0 0.3em 0.3em rgba(0, 0, 0, 0.23);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    .web4-course-header h1 {
+                        font-family: 'Arial', sans-serif;
+                        font-weight: bold;
+                        color: black;
+                        text-align: center;
+                        margin-bottom: 0.3em;
+                        font-size: 1.2em;
+                    }
+                    .web4-course-text p {
+                        font-family: 'Verdana', sans-serif;
+                        font-weight: normal;
+                        font-size: 0.8em;
+                        text-align: center;
+                        color: black;
+                        line-height: 1.3;
+                        margin: 0.5em 0;
+                    }
+                    .web4-button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 0.5em;
+                        padding: 0 0.2em;
+                        color: white;
+                        text-shadow: 0.1em 0.1em rgba(116, 116, 116, 0.8);
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border: solid 0.1em black;
+                        letter-spacing: 0.05em;
+                        font-weight: 600;
+                        font-size: 0.9em;
+                        background-color: hsl(49deg 98% 60%);
+                        border-radius: 2em;
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.5s ease;
+                        margin-top: 1em;
+                        align-self: center;
+                        width: 55%;
+                        height: 2.5em;
+                    }
+                    .web4-button:active {
+                        transform: scale(0.9);
+                        transition: all 100ms ease;
+                    }
+                    .web4-button svg {
+                        transition: all 0.5s ease;
+                        z-index: 2;
+                        width: 1.8em;
+                        height: 1.8em;
+                    }
+                    .web4-play {
+                        transition: all 0.5s ease;
+                        transition-delay: 300ms;
+                    }
+                    .web4-button:hover svg {
+                        transform: scale(3) translate(50%);
+                    }
+                    .web4-now {
+                        position: absolute;
+                        left: 0;
+                        transform: translateX(-100%);
+                        transition: all 0.5s ease;
+                        z-index: 2;
+                    }
+                    .web4-button:hover .web4-now {
+                        transform: translateX(0.5em);
+                        transition-delay: 300ms;
+                    }
+                    .web4-button:hover .web4-play {
+                        transform: translateX(200%);
+                        transition-delay: 300ms;
+                    }
+                    @media (max-width: 48rem) {
+                        .row {
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 1rem;
+                        }
+                        .web4-course-container {
+                            width: 90%;
+                            max-width: none;
+                        }
+                    }
+                </style>
+                
+                <div id="courses-container"></div>
+            
+                <script>
+                    const coursesData = [
+    { title: "Speaking for beginner 1 - SB1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 15 <br> Giá: 3.999.000 <br>" },
+    { title: "Speaking for beginner 2 - SB2", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 15 <br> Giá: 3.999.000 <br>" },
+    { title: "Speaking advanced - SA1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 12 <br> Giá: 1.999.000 <br>" },
+    { title: "Speaking for self-study learners - SS1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 bài chữa free <br> Số lượng: No limit <br> Giá: 99.000 <br>" },
+    { title: "Writing for beginner 1 - WB1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 12 <br> Giá: 3.999.000 <br>" },
+    { title: "Writing for beginner 2 - WB2", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 12 <br> Giá: 3.999.000 <br>" },
+    { title: "Writing advanced - WA1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 10 <br> Giá: 1.999.000 <br>" },
+    { title: "Reading and Listening for beginner 1 - RL1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 20 <br> Giá: 1.999.000 <br>" },
+    { title: "Reading and Listening for beginner 2 - RL2", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 20 <br> Giá: 1.999.000 <br>" },
+    { title: "Reading and Listening for beginner 3 - RL3", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 20 <br> Giá: 1.999.000 <br>" },
+    { title: "Reading and Listening medium level 1 - RL4", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 15 <br> Giá: 2.499.000 <br>" },
+    { title: "Reading and Listening medium level 2 - RL5", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 15 <br> Giá: 2.499.000 <br>" },
+    { title: "Reading and Listening Advanced - RL6", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 8-10 <br> Giá: 2.999.000 <br>" },
+    { title: "Road to 6.5 (all skills) - RT6", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 15 <br> Giá: 9.999.000 <br>" },
+    { title: "Road to 7+ (only Writing & Speaking) - RT7", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 6 tháng <br> Số lượng: 10-15 <br> Giá: 4.999.000 <br>" },
+    { title: "Online class for Reading & Listening - OC1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 1 tháng <br> Số lượng: 20-25 <br> Giá: 299.000 <br>" },
+    { title: "Online class for Speaking for beginners - OS1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 20 <br> Giá: 999.000 <br>" },
+    { title: "Online class for Speaking for Medium - OS2", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 10 <br> Giá: 1.499.000 <br>" },
+    { title: "Online class for Writing for beginners - OW1", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 12 <br> Giá: 999.000 <br>" },
+    { title: "Online class for Writing advanced - OW2", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 3 tháng <br> Số lượng: 10 <br> Giá: 1.499.000 <br>" },
+    { title: "Mock Test / Checkpoint for learners - MT0", description: "Bắt đầu: 05/09/2025 <br> Quá trình: 2 buổi <br> Số lượng: 5-20 <br> Giá: 50.000 <br>" }
+];
+
+            
+                    const coursesContainer = document.getElementById('courses-container');
+            
+                    coursesData.forEach((course, index) => {
+                        if (index % 3 === 0) {
+                            const row = document.createElement('div');
+                            row.className = 'row';
+                            coursesContainer.appendChild(row);
+                        }
+            
+                        const courseElement = document.createElement('div');
+                        courseElement.className = 'web4-course-container';
+                        courseElement.innerHTML = `
+                            <div class="web4-course-header">
+                                <h1>${course.title}</h1>
+                            </div>
+                            <div class="web4-course-text">
+                                <p>${course.description}</p>
+                            </div>
+                            <button class="web4-button">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 36 36"
+                                width="36px"
+                                height="36px"
+                                >
+                                <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+                                <path
+                                    fill="#e53935"
+                                    d="M38.67,42H11.52C11.27,40.62,11,38.57,11,36c0-5,0-11,0-11s1.44-7.39,3.22-9.59 c1.67-2.06,2.76-3.48,6.78-4.41c3-0.7,7.13-0.23,9,1c2.15,1.42,3.37,6.67,3.81,11.29c1.49-0.3,5.21,0.2,5.5,1.28 C40.89,30.29,39.48,38.31,38.67,42z"
+                                ></path>
+                                <path
+                                    fill="#b71c1c"
+                                    d="M39.02,42H11.99c-0.22-2.67-0.48-7.05-0.49-12.72c0.83,4.18,1.63,9.59,6.98,9.79 c3.48,0.12,8.27,0.55,9.83-2.45c1.57-3,3.72-8.95,3.51-15.62c-0.19-5.84-1.75-8.2-2.13-8.7c0.59,0.66,3.74,4.49,4.01,11.7 c0.03,0.83,0.06,1.72,0.08,2.66c4.21-0.15,5.93,1.5,6.07,2.35C40.68,33.85,39.8,38.9,39.02,42z"
+                                ></path>
+                                <path
+                                    fill="#212121"
+                                    d="M35,27.17c0,3.67-0.28,11.2-0.42,14.83h-2C32.72,38.42,33,30.83,33,27.17 c0-5.54-1.46-12.65-3.55-14.02c-1.65-1.08-5.49-1.48-8.23-0.85c-3.62,0.83-4.57,1.99-6.14,3.92L15,16.32 c-1.31,1.6-2.59,6.92-3,8.96v10.8c0,2.58,0.28,4.61,0.54,5.92H10.5c-0.25-1.41-0.5-3.42-0.5-5.92l0.02-11.09 c0.15-0.77,1.55-7.63,3.43-9.94l0.08-0.09c1.65-2.03,2.96-3.63,7.25-4.61c3.28-0.76,7.67-0.25,9.77,1.13 C33.79,13.6,35,22.23,35,27.17z"
+                                ></path>
+                                <path
+                                    fill="#01579b"
+                                    d="M17.165,17.283c5.217-0.055,9.391,0.283,9,6.011c-0.391,5.728-8.478,5.533-9.391,5.337 c-0.913-0.196-7.826-0.043-7.696-5.337C9.209,18,13.645,17.32,17.165,17.283z"
+                                ></path>
+                                <path
+                                    fill="#212121"
+                                    d="M40.739,37.38c-0.28,1.99-0.69,3.53-1.22,4.62h-2.43c0.25-0.19,1.13-1.11,1.67-4.9 c0.57-4-0.23-11.79-0.93-12.78c-0.4-0.4-2.63-0.8-4.37-0.89l0.1-1.99c1.04,0.05,4.53,0.31,5.71,1.49 C40.689,24.36,41.289,33.53,40.739,37.38z"
+                                ></path>
+                                <path
+                                    fill="#81d4fa"
+                                    d="M10.154,20.201c0.261,2.059-0.196,3.351,2.543,3.546s8.076,1.022,9.402-0.554 c1.326-1.576,1.75-4.365-0.891-5.267C19.336,17.287,12.959,16.251,10.154,20.201z"
+                                ></path>
+                                <path
+                                    fill="#212121"
+                                    d="M17.615,29.677c-0.502,0-0.873-0.03-1.052-0.069c-0.086-0.019-0.236-0.035-0.434-0.06 c-5.344-0.679-8.053-2.784-8.052-6.255c0.001-2.698,1.17-7.238,8.986-7.32l0.181-0.002c3.444-0.038,6.414-0.068,8.272,1.818 c1.173,1.191,1.712,3,1.647,5.53c-0.044,1.688-0.785,3.147-2.144,4.217C22.785,29.296,19.388,29.677,17.615,29.677z M17.086,17.973 c-7.006,0.074-7.008,4.023-7.008,5.321c-0.001,3.109,3.598,3.926,6.305,4.27c0.273,0.035,0.48,0.063,0.601,0.089 c0.563,0.101,4.68,0.035,6.855-1.732c0.865-0.702,1.299-1.57,1.326-2.653c0.051-1.958-0.301-3.291-1.073-4.075 c-1.262-1.281-3.834-1.255-6.825-1.222L17.086,17.973z"
+                                ></path>
+                                <path
+                                    fill="#e1f5fe"
+                                    d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z"
+                                ></path>
+                                </svg>
+                                <span class="web4-now">Now!</span>
+                                <span class="web4-play">Enroll</span>
+                            </button>
+                        `;
+            
+                        coursesContainer.lastElementChild.appendChild(courseElement);
+                    });
+                </script>
+            </div>
+            
+
+            <button class="cssbuttons-io-button" onclick="window.location.href='../main_web.html'">
+                Trở về trang chính
+                <div class="icon">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+         </div>
+
+       <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class='footer-text'>
+                <h1>The LIEMS IELTS Center</h1>
+                <p>__________________________________________</p>
+                <p>Contact: +84 987654321<br>
+                Hotline: 1900 6996<br>
+                ZALO: 0987654321<br>
+                Gmail: TheLiemsIELTScenter@gmail.com</p>
+                <p>CƠ SỞ THE The Liems<br>
+                *CS1: 55A Võ Văn Dũng, Đống Đa<br>
+                *CS2: 203/76 Hoàng Quốc Việt, Cầu Giấy<br>
+                *CS3: 27/17 Đại Cồ Việt, Hai Bà Trưng<br>
+                *CS4: Tầng 4, Tòa 29T2 Hoàng Đạo Thúy,Thanh Xuân<br>
+                *CS5: 414 Nguyễn Văn Cừ, Ngọc Lâm, Long Biên</p>
+            </div>
+            <img src="picture/certy.png" class='certification'>
+        </div>
+        <div class="partner-container">
+            <h2>Đối Tác</h2>
+            <p>___________________________________________________________________________________________________________</p>
+            <img src="picture/partner.png" class="partner-img">
+        </div>
+        <div class="design-by">
+            <p>Design by Group4-LTWeb-02</p>
+        </div>
+    </div>
+</body>
+</html>

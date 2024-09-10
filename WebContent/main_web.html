@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Speaking Room</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <button class="menu-button">
+            <img src="picture/logo.png" alt="Menu Icon" class="menu-icon">
+        </button>
+        The Liems
+        <button class="login-button" onclick="window.location.href ='login.html';">
+            <span class="login-button-top">Login</span>
+        </button>
+    </div>
+    
+
+    <!-- Thanh công cụ bên phải màn hình -->
+
+    <div class="round-button top-position-1">
+        <img src="picture/phone.png" alt="Button Image">
+    </div>
+    <div class="round-button top-position-2">
+        <img src="picture/mail.png" alt="Button 2">
+    </div>
+    <div class="round-button top-position-3">
+        <img src="picture/chat.png" alt="Button 3">
+    </div>
+    <div class="round-button top-position-4" id="scrollToTopBtn">
+        <img src="picture/scroll.png" alt="Button 4">
+    </div>
+    <script>
+        document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+
+    <!-- tiêu đề của trang web -->
+    <div class="text-header bounce">
+        The Liems IELTS CENTER-<br>
+        Golden Standard for IELTS Preparation
+    </div>
+    <div class="small-text-header bounce ">
+        Trung tâm uy tín trong việc đào tạo và ôn luyện IELTS No.1 VN
+    </div>
+
+
+     <!-- nội dung của trang web 1-->
+    <img src="picture/Picture1.png"  alt="picture1" class="picture1">
+    <button class="btn btn1" onclick="document.getElementById('tieudeweb4').scrollIntoView();">Course</button>
+    <button class="btn btn2" onclick="document.getElementById('tieudeweb3').scrollIntoView();">Teacher</button>
+    <button class="btn btn3" onclick="document.getElementById('tieudeweb6').scrollIntoView();">Hiring</button>
+    <button class="btn btn4" onclick="document.getElementById('footer69').scrollIntoView();">About us</button>
+    
+     <!-- nội dung của trang web 2-->
+    <div class="header-text bounce" id="tieudeweb2">
+    <p>"Why should you choose us as a reliable center for your studies?"</p>
+    </div>
+    <div class="container" >
+        <div class="content-wrapper">
+            <div class="features">
+            <div class="feature feature1">
+                <h2>Đội ngủ giảng viên & trợ giảng tài năng</h2>
+            </div>
+            <div class="feature feature2">
+                <h2>Giáo trình thân thiện với người Việt</h2>
+            </div>
+            <div class="feature feature3">
+                <h2>Môi trường học tập cởi mở, sáng tạo</h2>
+            </div>
+            <div class="feature feature4">
+                <h2>Thư viện ồn luyện miễn phí</h2>
+            </div>
+            </div>
+            <div class="image-wrapper">
+            <img src="picture/Picture2.png" alt="Example Image">
+            </div>
+        </div>
+        </div>
+
+    <!-- Nội dung của trang web 3: giới thiệu giảng viên -->
+    <div class="center-container" id="tieudeweb3">
+        <div class="bg4web3">
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+            <div class="teacher-intro">
+                <h><strong>Đội Ngũ Giảng Viên</strong></h>
+                <p>_________________________________________________</p>
+                <p>Với kinh nghiệm vận hành trung tâm giảng dạy và đào tạo<br>
+                    trên 9 năm, với hơn 20 giảng viên đứng lớp đạt 7.5+<br>
+                    IELTS và trình độ sư phạm tiếng anh, trung tâm<br>
+                    tự tin với chất lượng đào tạo đạt hiệu quả cao<br>
+                    và quy trình được cá nhân hóa với từng cá <br>
+                    nhân và mục tiêu riêng của học viên. 
+                </p>
+            </div>
+            <div>
+                <img src='picture/ceo.png' class="img-ceo">
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('visible');
+                                }
+                            });
+                        }, {
+                            threshold: 0.1 // Kích hoạt khi 10% của phần tử xuất hiện
+                        });
+                        
+                        const ceoImage = document.querySelector('.img-ceo');
+                        observer.observe(ceoImage);
+                    });
+                    </script>
+            </div>
+            <div>
+                <div id="teacherin4-profile-slider-container" class="teacherin4-center-container">
+                    <style>
+                        #teacherin4-profile-slider-container.teacherin4-center-container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 40vh; /* Điều này sẽ làm cho container có chiều cao tối thiểu bằng chiều cao của viewport */
+
+                        }
+                        #teacherin4-profile-slider-container{
+                            text-align: center;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-container {
+                            display: flex;
+                            align-items: center;
+                            max-width: 100%;
+            
+                        }
+                        .profile-image {
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 5em;
+                        width: 60px;
+                        height: 60px;
+                    }
+                        #teacherin4-profile-slider-container .teacherin4-image-container {
+                            display: flex;
+                            overflow: hidden;
+                            width: 530px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-image-wrapper {
+                            display: flex;
+                            transition: transform 0.5s ease;
+                        }
+                        #teacherin4-profile-slider-container button {
+                            font-size: 24px;
+                            margin: 0 10px;
+                            padding: 10px 15px;
+                            cursor: pointer;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card {
+                            background-color: transparent;
+                            width: 122.5px;
+                            height: 135px;
+                            perspective: 1000px;
+                            margin: 5px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card-inner {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.6s;
+                            transform-style: preserve-3d;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card-front, #teacherin4-profile-slider-container .teacherin4-flip-card-back {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            padding: 5px;
+                            border-radius: 2em;
+                            backface-visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card-front {
+                            background-color: #240d29;
+                            border: 4px solid #c143da;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-profile-image {
+                            background-color: transparent;
+                            border: none;
+                            border-radius: 5em;
+                            width: 60px;
+                            height: 60px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-pfp {
+                            border-radius: 35em;
+                            fill: #c143da;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-name {
+                            margin-top: 15px;
+                            font-size: 13.5px;
+                            color: #c143da;
+                            font-weight: bold;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card-back {
+                            background-color: #240d29;
+                            border: 4px solid #c143da;
+                            transform: rotateY(180deg);
+                            padding: 5.5px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-description {
+                            font-size: 10px;
+                            letter-spacing: 1px;
+                            color: white;
+                            margin-bottom: 15px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-socialbar {
+                            display: flex;
+                            justify-content: center;
+                            gap: 20px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-socialbar svg {
+                            transition: 0.4s;
+                            width: 10px;
+                            height: 10px;
+                            color: #c143da;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-socialbar svg:hover {
+                            color: white;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-flip-card:hover .teacherin4-flip-card-inner {
+                            transform: rotateY(180deg);
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-container {
+                            display: flex;
+                            justify-content: center;
+                            margin: 20px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-profile-image img {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-3d {
+                            -webkit-appearance: none;
+                            appearance: none;
+                            position: relative;
+                            border-width: 0;
+                            padding: 0 8px;
+                            min-width: 4em;
+                            min-height: 4em;
+                            box-sizing: border-box;
+                            background: transparent;
+                            font: inherit;
+                            cursor: pointer;
+                            margin: 10px;
+                            border-radius: 20px;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-top {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            z-index: 2;
+                            padding: 8px 16px;
+                            transform: translateY(0);
+                            color: Black;
+                            background-image: linear-gradient(137.48deg,#ffdb3b 10%,#fe53bb 45%,#8f51ea 67%,#0044ff 87%);;;
+                            text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+                            border-radius: 20px;
+                            transition: transform 0.3s, border-radius 0.3s, background 10s;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-3d:active .teacherin4-button-top {
+                            border-radius: 10px 10px 8px 8px / 8px;
+                            transform: translateY(2px);
+                            background-image: linear-gradient(137.48deg,#ffdb3b 10%,#fe53bb 45%,#8f51ea 67%,#0044ff 87%);;;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-bottom {
+                            position: absolute;
+                            z-index: 1;
+                            bottom: 4px;
+                            left: 4px;
+                            border-radius: 20px;
+                            padding-top: 6px;
+                            width: calc(100% - 8px);
+                            height: calc(100% - 10px);
+                            background-image: linear-gradient(137.48deg,#ffdb3b 10%,#fe53bb 45%,#8f51ea 67%,#0044ff 87%);;;
+                            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+                            transition: border-radius 0.2s, padding-top 0.2s;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-base {
+                            position: absolute;
+                            z-index: 0;
+                            top: 4px;
+                            left: 0;
+                            border-radius: 20px;
+                            width: 100%;
+                            height: calc(100% - 4px);
+                            background-color: white;
+                            box-shadow: 0 1px 1px 0 rgba(108, 43, 43, 0.75),
+                                inset 0 2px 2px rgba(0, 0, 0, 0.25);
+                            transition: border-radius 0.2s, padding-top 0.2s;
+                        }
+                        #teacherin4-profile-slider-container .teacherin4-button-3d:active .teacherin4-button-bottom,
+                        #teacherin4-profile-slider-container .teacherin4-button-3d:active .teacherin4-button-base {
+                            border-radius: 10px 10px 8px 8px / 8px;
+                            padding-top: 0;
+                        }
+                    </style>
+                    <div class="teacherin4-container">
+                        <button class="teacherin4-button-3d" id="teacherin4-prevBtn">
+                            <div class="teacherin4-button-top">
+                                <span class="material-icons">❮</span>
+                            </div>
+                            <div class="teacherin4-button-bottom"></div>
+                            <div class="teacherin4-button-base"></div>
+                        </button>
+                        <div class="teacherin4-image-container">
+                            <div class="teacherin4-image-wrapper" id="teacherin4-imageWrapper">
+                            </div>
+                        </div>
+                        <button class="teacherin4-button-3d" id="teacherin4-nextBtn">
+                            <div class="teacherin4-button-top">
+                                <span class="material-icons">❯</span>
+                            </div>
+                            <div class="teacherin4-button-bottom"></div>
+                            <div class="teacherin4-button-base"></div>
+                        </button>
+                    </div>
+                    <script>
+                        (function() {
+                const imageWrapper = document.getElementById('teacherin4-imageWrapper');
+                const prevBtn = document.getElementById('teacherin4-prevBtn');
+                const nextBtn = document.getElementById('teacherin4-nextBtn');
+                const totalProfiles = 20;
+                let currentIndex = 0;
+            
+                // Mảng chứa thông tin cho mỗi profile
+                const profileData = [
+                {
+                    name: "Trịnh Trần Phương Tuấn",
+                    image: "https://th.bing.com/th/id/OIP.QofCnHzdIt9xj8iI7d9GWwHaKv?w=127&h=184&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 8.0 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "",
+                    image: "",
+                    description: "IELTS 7.5 <br> Speaking 7.5 <br> Writing 7.0 <br> Reading 8.0 <br> Listening 7.5"
+                },
+                {
+                    name: "",
+                    image: "",
+                    description: "IELTS 8.5 <br> Speaking 8.0 <br> Writing 8.5 <br> Reading 9.0 <br> Listening 8.5"
+                },
+                {
+                    name: "Đom Đóm",
+                    image: "",
+                    description: "IELTS 7.5 <br> Speaking 7.5 <br> Writing 7.0 <br> Reading 8.0 <br> Listening 7.5"
+                },
+                {
+                    name: "Ngọc Linh 2k16 fan a jack",
+                    image: "",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 8.0 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Bảo Khánh 2k15 fan a jack",
+                    image: "",
+                    description: "IELTS 8.5 <br> Speaking 8.0 <br> Writing 8.5 <br> Reading 9.0 <br> Listening 8.5"
+                },
+                {
+                    name: "Duy Khang 2k10 fan a jack",
+                    image: "",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 7.5 <br> Reading 8.5 <br> Listening 8.5"
+                },
+                {
+                    name: "Thùy Dung 2k16 fan a jack",
+                    image: "",
+                    description: "IELTS 7.5 <br> Speaking 7.5 <br> Writing 7.0 <br> Reading 8.0 <br> Listening 7.5"
+                },
+                {
+                    name: "Trần Vũ 2k16 fan a jack",
+                    image: "",
+                    description: "IELTS 8.0 <br> Speaking 8.0 <br> Writing 7.5 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Quỳnh Anh 2k16 fan a J97",
+                    image: "",
+                    description: "IELTS 8.5 <br> Speaking 8.0 <br> Writing 8.5 <br> Reading 9.0 <br> Listening 8.5"
+                },
+                {
+                    name: "Đức Huy",
+                    image: "path/to/image11.jpg",
+                    description: "IELTS 7.5 <br> Speaking 7.0 <br> Writing 7.5 <br> Reading 8.0 <br> Listening 7.5"
+                },
+                {
+                    name: "Khánh Ngọc",
+                    image: "path/to/image12.jpg",
+                    description: "IELTS 8.0 <br> Speaking 8.0 <br> Writing 7.5 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Linh Chi",
+                    image: "path/to/image13.jpg",
+                    description: "IELTS 8.5 <br> Speaking 8.5 <br> Writing 8.0 <br> Reading 9.0 <br> Listening 8.5"
+                },
+                {
+                    name: "Hà My",
+                    image: "path/to/image14.jpg",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 8.0 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Thanh Hằng",
+                    image: "path/to/image15.jpg",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 7.5 <br> Reading 8.5 <br> Listening 8.5"
+                },
+                {
+                    name: "Phúc Thịnh",
+                    image: "path/to/image16.jpg",
+                    description: "IELTS 8.0 <br> Speaking 7.5 <br> Writing 8.0 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Thu Thảo",
+                    image: "path/to/image17.jpg",
+                    description: "IELTS 7.5 <br> Speaking 7.0 <br> Writing 7.5 <br> Reading 8.0 <br> Listening 7.5"
+                },
+                {
+                    name: "Văn Tú",
+                    image: "path/to/image18.jpg",
+                    description: "IELTS 8.5 <br> Speaking 8.0 <br> Writing 8.5 <br> Reading 9.0 <br> Listening 8.5"
+                },
+                {
+                    name: "Mai Phương",
+                    image: "path/to/image19.jpg",
+                    description: "IELTS 8.0 <br> Speaking 8.0 <br> Writing 7.5 <br> Reading 8.5 <br> Listening 8.0"
+                },
+                {
+                    name: "Trọng Nhân",
+                    image: "path/to/image20.jpg",
+                    description: "IELTS 8.5 <br> Speaking 8.5 <br> Writing 8.0 <br> Reading 9.0 <br> Listening 8.5"
+                }
+                ];
+            
+                // Tạo 20 flip card profiles
+                for (let i = 0; i < totalProfiles; i++) {
+                    const profile = profileData[i] || { name: `Profile ${i+1}`, image: "", description: `Profile ${i+1}. IELTS 8.0, Speaking 7.5, Writing 7.0, Reading 8.5, Listening 9.0` };
+                    
+                    const flipCard = document.createElement('div');
+                    flipCard.className = 'teacherin4-flip-card';
+                    flipCard.innerHTML = `
+                        <div class="teacherin4-flip-card-inner">
+                            <div class="teacherin4-flip-card-front">
+                                <div class="teacherin4-profile-image">
+                                    ${profile.image ? `<img src="${profile.image}" alt="${profile.name}">` : `
+                                    <svg viewBox="0 0 122.88 122.88" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" class="teacherin4-pfp"><g><path d="M61.44,0c8.32,0,16.25,1.66,23.5,4.66l0.11,0.05c7.47,3.11,14.2,7.66,19.83,13.3l0,0c5.66,5.65,10.22,12.42,13.34,19.95 c3.01,7.24,4.66,15.18,4.66,23.49c0,8.32-1.66,16.25-4.66,23.5l-0.05,0.11c-3.12,7.47-7.66,14.2-13.3,19.83l0,0 c-5.65,5.66-12.42,10.22-19.95,13.34c-7.24,3.01-15.18,4.66-23.49,4.66c-8.31,0-16.25-1.66-23.5-4.66l-0.11-0.05 c-7.47-3.11-14.2-7.66-19.83-13.29L18,104.87C12.34,99.21,7.78,92.45,4.66,84.94C1.66,77.69,0,69.76,0,61.44s1.66-16.25,4.66-23.5 l0.05-0.11c3.11-7.47,7.66-14.2,13.29-19.83L18.01,18c5.66-5.66,12.42-10.22,19.94-13.34C45.19,1.66,53.12,0,61.44,0L61.44,0z M16.99,94.47l0.24-0.14c5.9-3.29,21.26-4.38,27.64-8.83c0.47-0.7,0.97-1.72,1.46-2.83c0.73-1.67,1.4-3.5,1.82-4.74 c-1.78-2.1-3.31-4.47-4.77-6.8l-4.83-7.69c-1.76-2.64-2.68-5.04-2.74-7.02c-0.03-0.93,0.13-1.77,0.48-2.52 c0.36-0.78,0.91-1.43,1.66-1.93c0.35-0.24,0.74-0.44,1.17-0.59c-0.32-4.17-0.43-9.42-0.23-13.82c0.1-1.04,0.31-2.09,0.59-3.13 c1.24-4.41,4.33-7.96,8.16-10.4c2.11-1.35,4.43-2.36,6.84-3.04c1.54-0.44-1.31-5.34,0.28-5.51c7.67-0.79,20.08,6.22,25.44,12.01 c2.68,2.9,4.37,6.75,4.73,11.84l-0.3,12.54l0,0c1.34,0.41,2.2,1.26,2.54,2.63c0.39,1.53-0.03,3.67-1.33,6.6l0,0 c-0.02,0.05-0.05,0.11-0.08,0.16l-5.51,9.07c-2.02,3.33-4.08,6.68-6.75,9.31C73.75,80,74,80.35,74.24,80.7 c1.09,1.6,2.19,3.2,3.6,4.63c0.05,0.05,0.09,0.1,0.12,0.15c6.34,4.48,21.77,5.57,27.69,8.87l0.24,0.14 c6.87-9.22,10.93-20.65,10.93-33.03c0-15.29-6.2-29.14-16.22-39.15c-10-10.03-23.85-16.23-39.14-16.23 c-15.29,0-29.14,6.2-39.15,16.22C12.27,32.3,6.07,46.15,6.07,61.44C6.07,73.82,10.13,85.25,16.99,94.47L16.99,94.47L16.99,94.47z"></path></g></svg>
+                                    `}
+                                </div>
+                                <div class="teacherin4-name">
+                                    ${profile.name}
+                                </div>
+                            </div>
+                            <div class="teacherin4-flip-card-back">
+                                <p class="teacherin4-description">
+                                    ${profile.description}
+                                </p>
+                                <div class="teacherin4-socialbar">
+                                    <a id="teacherin4-github" href="#"><svg viewBox="0 0 16 16" class="bi bi-github" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                    </svg></a>
+                                    <a id="teacherin4-instagram" href="#"><svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                    </svg></a>
+                                    <a id="teacherin4-facebook" href="#"><svg viewBox="0 0 16 16" class="bi bi-facebook" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                    </svg></a>
+                                    <a id="teacherin4-twitter" href="#"><svg viewBox="0 0 16 16" class="bi bi-twitter" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.3 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                    </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    imageWrapper.appendChild(flipCard);
+                }
+            
+                function updateGallery() {
+                    imageWrapper.style.transform = `translateX(${-currentIndex * 132.5}px)`;
+                }
+            
+                function nextImage() {
+                    currentIndex = (currentIndex + 1) % (totalProfiles - 3);
+                    updateGallery();
+                }
+            
+                function prevImage() {
+                    currentIndex = (currentIndex - 1 + totalProfiles - 3) % (totalProfiles - 3);
+                    updateGallery();
+                }
+            
+                nextBtn.addEventListener('click', nextImage);
+                prevBtn.addEventListener('click', prevImage);
+            
+                // Hiển thị 4 profile đầu tiên
+                updateGallery();
+            })();
+                </script>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- web4: thông tin khóa học -->
+    <div class="Khóa học" id="tieudeweb4">
+    <h1>Khóa học <br>__________________________________________________</h1>
+    <div class="table-container">
+        <table class="course-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã môn học</th>
+                    <th>Tên lớp học</th>
+                    <th>Giá</th>
+                    <th>Quá trình</th>
+                    <th>Số lượng học sinh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>SB1</td>
+                    <td>Speaking for beginner 1</td>
+                    <td>3.999.000</td>
+                    <td>6 tháng</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SB2</td>
+                    <td>Speaking for beginner 2</td>
+                    <td>3.999.000</td>
+                    <td>6 tháng</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SA1</td>
+                    <td>Speaking advanced</td>
+                    <td>1.999.000</td>
+                    <td>3 tháng</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>SS1</td>
+                    <td>Speaking for self-study learners</td>
+                    <td>99.000</td>
+                    <td>3 bài chữa free</td>
+                    <td>No limit</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>WB1</td>
+                    <td>Writing for beginner 1</td>
+                    <td>3.999.000</td>
+                    <td>6 tháng</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>WB2</td>
+                    <td>Writing for beginner 2</td>
+                    <td>3.999.000</td>
+                    <td>6 tháng</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>WA1</td>
+                    <td>Writing advanced</td>
+                    <td>1.999.000</td>
+                    <td>3 tháng</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>RL1</td>
+                    <td>Reading and Listening for beginner 1</td>
+                    <td>1.999.000</td>
+                    <td>6 tháng</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>RL2</td>
+                    <td>Reading and Listening for beginner 2</td>
+                    <td>1.999.000</td>
+                    <td>6 tháng</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>RL3</td>
+                    <td>Reading and Listening for beginner 3</td>
+                    <td>1.999.000</td>
+                    <td>6 tháng</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>RL4</td>
+                    <td>Reading and Listening medium level 1</td>
+                    <td>2.499.000</td>
+                    <td>6 tháng</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>RL5</td>
+                    <td>Reading and Listening medium level 2</td>
+                    <td>2.499.000</td>
+                    <td>6 tháng</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>RL6</td>
+                    <td>Reading and Listening Advanced</td>
+                    <td>2.999.000</td>
+                    <td>3 tháng</td>
+                    <td>8-10</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>RT6</td>
+                    <td>Road to 6.5 (all skills)</td>
+                    <td>9.999.000</td>
+                    <td>6 tháng</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>RT7</td>
+                    <td>Road to 7+ (only Writing & Speaking)</td>
+                    <td>4.999.000</td>
+                    <td>6 tháng</td>
+                    <td>10-15</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>OC1</td>
+                    <td>Online class for Reading & Listening</td>
+                    <td>299.000</td>
+                    <td>1 tháng</td>
+                    <td>20-25</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>OS1</td>
+                    <td>Online class for Speaking for beginners</td>
+                    <td>999.000</td>
+                    <td>3 tháng</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>OS2</td>
+                    <td>Online class for Speaking for Medium</td>
+                    <td>1.499.000</td>
+                    <td>3 tháng</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>OW1</td>
+                    <td>Online class for Writing for beginners</td>
+                    <td>999.000</td>
+                    <td>3 tháng</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>OW2</td>
+                    <td>Online class for Writing advanced</td>
+                    <td>1.499.000</td>
+                    <td>3 tháng</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>MT0</td>
+                    <td>Mock Test / Checkpoint for learners</td>
+                    <td>50.000</td>
+                    <td>2 buổi</td>
+                    <td>5-20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1><strong>Our Hot Courses</strong><br>_______________________________________________</h1>
+
+    <div class="row1">
+        <div class="web4-course-container web4-course-1 ">
+            <div class="web4-course-header">
+                <h1><strong>Speaking for <br> beginner 1 - SB1</strong></h1>
+            </div>
+            <div class="web4-course-text">
+                <p>Bắt đầu: 5/9/2024 <br>
+                    Quá trình: 6 tháng<br>
+                    Số lượng: 15<br>
+                    Giá: 3.999.000 đ
+                    </p>
+            </div>
+            <button class="web4-button">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36"
+                width="36px"
+                height="36px"
+                >
+                <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+                <path
+                    fill="#e53935"
+                    d="M38.67,42H11.52C11.27,40.62,11,38.57,11,36c0-5,0-11,0-11s1.44-7.39,3.22-9.59 c1.67-2.06,2.76-3.48,6.78-4.41c3-0.7,7.13-0.23,9,1c2.15,1.42,3.37,6.67,3.81,11.29c1.49-0.3,5.21,0.2,5.5,1.28 C40.89,30.29,39.48,38.31,38.67,42z"
+                ></path>
+                <path
+                    fill="#b71c1c"
+                    d="M39.02,42H11.99c-0.22-2.67-0.48-7.05-0.49-12.72c0.83,4.18,1.63,9.59,6.98,9.79 c3.48,0.12,8.27,0.55,9.83-2.45c1.57-3,3.72-8.95,3.51-15.62c-0.19-5.84-1.75-8.2-2.13-8.7c0.59,0.66,3.74,4.49,4.01,11.7 c0.03,0.83,0.06,1.72,0.08,2.66c4.21-0.15,5.93,1.5,6.07,2.35C40.68,33.85,39.8,38.9,39.02,42z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M35,27.17c0,3.67-0.28,11.2-0.42,14.83h-2C32.72,38.42,33,30.83,33,27.17 c0-5.54-1.46-12.65-3.55-14.02c-1.65-1.08-5.49-1.48-8.23-0.85c-3.62,0.83-4.57,1.99-6.14,3.92L15,16.32 c-1.31,1.6-2.59,6.92-3,8.96v10.8c0,2.58,0.28,4.61,0.54,5.92H10.5c-0.25-1.41-0.5-3.42-0.5-5.92l0.02-11.09 c0.15-0.77,1.55-7.63,3.43-9.94l0.08-0.09c1.65-2.03,2.96-3.63,7.25-4.61c3.28-0.76,7.67-0.25,9.77,1.13 C33.79,13.6,35,22.23,35,27.17z"
+                ></path>
+                <path
+                    fill="#01579b"
+                    d="M17.165,17.283c5.217-0.055,9.391,0.283,9,6.011c-0.391,5.728-8.478,5.533-9.391,5.337 c-0.913-0.196-7.826-0.043-7.696-5.337C9.209,18,13.645,17.32,17.165,17.283z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M40.739,37.38c-0.28,1.99-0.69,3.53-1.22,4.62h-2.43c0.25-0.19,1.13-1.11,1.67-4.9 c0.57-4-0.23-11.79-0.93-12.78c-0.4-0.4-2.63-0.8-4.37-0.89l0.1-1.99c1.04,0.05,4.53,0.31,5.71,1.49 C40.689,24.36,41.289,33.53,40.739,37.38z"
+                ></path>
+                <path
+                    fill="#81d4fa"
+                    d="M10.154,20.201c0.261,2.059-0.196,3.351,2.543,3.546s8.076,1.022,9.402-0.554 c1.326-1.576,1.75-4.365-0.891-5.267C19.336,17.287,12.959,16.251,10.154,20.201z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M17.615,29.677c-0.502,0-0.873-0.03-1.052-0.069c-0.086-0.019-0.236-0.035-0.434-0.06 c-5.344-0.679-8.053-2.784-8.052-6.255c0.001-2.698,1.17-7.238,8.986-7.32l0.181-0.002c3.444-0.038,6.414-0.068,8.272,1.818 c1.173,1.191,1.712,3,1.647,5.53c-0.044,1.688-0.785,3.147-2.144,4.217C22.785,29.296,19.388,29.677,17.615,29.677z M17.086,17.973 c-7.006,0.074-7.008,4.023-7.008,5.321c-0.001,3.109,3.598,3.926,6.305,4.27c0.273,0.035,0.48,0.063,0.601,0.089 c0.563,0.101,4.68,0.035,6.855-1.732c0.865-0.702,1.299-1.57,1.326-2.653c0.051-1.958-0.301-3.291-1.073-4.075 c-1.262-1.281-3.834-1.255-6.825-1.222L17.086,17.973z"
+                ></path>
+                <path
+                    fill="#e1f5fe"
+                    d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z"
+                ></path>
+                </svg>
+                <span class="web4-now">Now!</span>
+                <span class="web4-play">Enroll</span>
+            </button>
+        </div>
+
+        <div class="web4-course-container web4-course-1 ">
+            <div class="web4-course-header">
+                <h1><strong>Road to 6.5<br>(all skills) - RT6</strong></h1>
+            </div>
+            <div class="web4-course-text">
+                <p>Bắt đầu: 5/9/2024 <br>
+                    Quá trình: 6 tháng<br>
+                    Số lượng: 15<br>
+                    Giá: 9.999.000 đ
+                    </p>
+            </div>
+            <button class="web4-button">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36"
+                width="36px"
+                height="36px"
+                >
+                <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+                <path
+                    fill="#e53935"
+                    d="M38.67,42H11.52C11.27,40.62,11,38.57,11,36c0-5,0-11,0-11s1.44-7.39,3.22-9.59 c1.67-2.06,2.76-3.48,6.78-4.41c3-0.7,7.13-0.23,9,1c2.15,1.42,3.37,6.67,3.81,11.29c1.49-0.3,5.21,0.2,5.5,1.28 C40.89,30.29,39.48,38.31,38.67,42z"
+                ></path>
+                <path
+                    fill="#b71c1c"
+                    d="M39.02,42H11.99c-0.22-2.67-0.48-7.05-0.49-12.72c0.83,4.18,1.63,9.59,6.98,9.79 c3.48,0.12,8.27,0.55,9.83-2.45c1.57-3,3.72-8.95,3.51-15.62c-0.19-5.84-1.75-8.2-2.13-8.7c0.59,0.66,3.74,4.49,4.01,11.7 c0.03,0.83,0.06,1.72,0.08,2.66c4.21-0.15,5.93,1.5,6.07,2.35C40.68,33.85,39.8,38.9,39.02,42z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M35,27.17c0,3.67-0.28,11.2-0.42,14.83h-2C32.72,38.42,33,30.83,33,27.17 c0-5.54-1.46-12.65-3.55-14.02c-1.65-1.08-5.49-1.48-8.23-0.85c-3.62,0.83-4.57,1.99-6.14,3.92L15,16.32 c-1.31,1.6-2.59,6.92-3,8.96v10.8c0,2.58,0.28,4.61,0.54,5.92H10.5c-0.25-1.41-0.5-3.42-0.5-5.92l0.02-11.09 c0.15-0.77,1.55-7.63,3.43-9.94l0.08-0.09c1.65-2.03,2.96-3.63,7.25-4.61c3.28-0.76,7.67-0.25,9.77,1.13 C33.79,13.6,35,22.23,35,27.17z"
+                ></path>
+                <path
+                    fill="#01579b"
+                    d="M17.165,17.283c5.217-0.055,9.391,0.283,9,6.011c-0.391,5.728-8.478,5.533-9.391,5.337 c-0.913-0.196-7.826-0.043-7.696-5.337C9.209,18,13.645,17.32,17.165,17.283z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M40.739,37.38c-0.28,1.99-0.69,3.53-1.22,4.62h-2.43c0.25-0.19,1.13-1.11,1.67-4.9 c0.57-4-0.23-11.79-0.93-12.78c-0.4-0.4-2.63-0.8-4.37-0.89l0.1-1.99c1.04,0.05,4.53,0.31,5.71,1.49 C40.689,24.36,41.289,33.53,40.739,37.38z"
+                ></path>
+                <path
+                    fill="#81d4fa"
+                    d="M10.154,20.201c0.261,2.059-0.196,3.351,2.543,3.546s8.076,1.022,9.402-0.554 c1.326-1.576,1.75-4.365-0.891-5.267C19.336,17.287,12.959,16.251,10.154,20.201z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M17.615,29.677c-0.502,0-0.873-0.03-1.052-0.069c-0.086-0.019-0.236-0.035-0.434-0.06 c-5.344-0.679-8.053-2.784-8.052-6.255c0.001-2.698,1.17-7.238,8.986-7.32l0.181-0.002c3.444-0.038,6.414-0.068,8.272,1.818 c1.173,1.191,1.712,3,1.647,5.53c-0.044,1.688-0.785,3.147-2.144,4.217C22.785,29.296,19.388,29.677,17.615,29.677z M17.086,17.973 c-7.006,0.074-7.008,4.023-7.008,5.321c-0.001,3.109,3.598,3.926,6.305,4.27c0.273,0.035,0.48,0.063,0.601,0.089 c0.563,0.101,4.68,0.035,6.855-1.732c0.865-0.702,1.299-1.57,1.326-2.653c0.051-1.958-0.301-3.291-1.073-4.075 c-1.262-1.281-3.834-1.255-6.825-1.222L17.086,17.973z"
+                ></path>
+                <path
+                    fill="#e1f5fe"
+                    d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z"
+                ></path>
+                </svg>
+                <span class="web4-now">Now!</span>
+                <span class="web4-play">Enroll</span>
+            </button>
+        </div>
+
+        <div class="web4-course-container web4-course-1 ">
+            <div class="web4-course-header">
+                <h1><strong>Speaking for <br>self-study - SS1</strong></h1>
+            </div>
+            <div class="web4-course-text">
+                <p>Phần mềm thi speaking <br>
+                    computer-based<br>
+                    Free 3 bài chấm chữa<br>
+                    Giá: 99.000 đ
+                    </p>
+            </div>
+            <button class="web4-button">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36"
+                width="36px"
+                height="36px"
+                >
+                <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+                <path
+                    fill="#e53935"
+                    d="M38.67,42H11.52C11.27,40.62,11,38.57,11,36c0-5,0-11,0-11s1.44-7.39,3.22-9.59 c1.67-2.06,2.76-3.48,6.78-4.41c3-0.7,7.13-0.23,9,1c2.15,1.42,3.37,6.67,3.81,11.29c1.49-0.3,5.21,0.2,5.5,1.28 C40.89,30.29,39.48,38.31,38.67,42z"
+                ></path>
+                <path
+                    fill="#b71c1c"
+                    d="M39.02,42H11.99c-0.22-2.67-0.48-7.05-0.49-12.72c0.83,4.18,1.63,9.59,6.98,9.79 c3.48,0.12,8.27,0.55,9.83-2.45c1.57-3,3.72-8.95,3.51-15.62c-0.19-5.84-1.75-8.2-2.13-8.7c0.59,0.66,3.74,4.49,4.01,11.7 c0.03,0.83,0.06,1.72,0.08,2.66c4.21-0.15,5.93,1.5,6.07,2.35C40.68,33.85,39.8,38.9,39.02,42z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M35,27.17c0,3.67-0.28,11.2-0.42,14.83h-2C32.72,38.42,33,30.83,33,27.17 c0-5.54-1.46-12.65-3.55-14.02c-1.65-1.08-5.49-1.48-8.23-0.85c-3.62,0.83-4.57,1.99-6.14,3.92L15,16.32 c-1.31,1.6-2.59,6.92-3,8.96v10.8c0,2.58,0.28,4.61,0.54,5.92H10.5c-0.25-1.41-0.5-3.42-0.5-5.92l0.02-11.09 c0.15-0.77,1.55-7.63,3.43-9.94l0.08-0.09c1.65-2.03,2.96-3.63,7.25-4.61c3.28-0.76,7.67-0.25,9.77,1.13 C33.79,13.6,35,22.23,35,27.17z"
+                ></path>
+                <path
+                    fill="#01579b"
+                    d="M17.165,17.283c5.217-0.055,9.391,0.283,9,6.011c-0.391,5.728-8.478,5.533-9.391,5.337 c-0.913-0.196-7.826-0.043-7.696-5.337C9.209,18,13.645,17.32,17.165,17.283z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M40.739,37.38c-0.28,1.99-0.69,3.53-1.22,4.62h-2.43c0.25-0.19,1.13-1.11,1.67-4.9 c0.57-4-0.23-11.79-0.93-12.78c-0.4-0.4-2.63-0.8-4.37-0.89l0.1-1.99c1.04,0.05,4.53,0.31,5.71,1.49 C40.689,24.36,41.289,33.53,40.739,37.38z"
+                ></path>
+                <path
+                    fill="#81d4fa"
+                    d="M10.154,20.201c0.261,2.059-0.196,3.351,2.543,3.546s8.076,1.022,9.402-0.554 c1.326-1.576,1.75-4.365-0.891-5.267C19.336,17.287,12.959,16.251,10.154,20.201z"
+                ></path>
+                <path
+                    fill="#212121"
+                    d="M17.615,29.677c-0.502,0-0.873-0.03-1.052-0.069c-0.086-0.019-0.236-0.035-0.434-0.06 c-5.344-0.679-8.053-2.784-8.052-6.255c0.001-2.698,1.17-7.238,8.986-7.32l0.181-0.002c3.444-0.038,6.414-0.068,8.272,1.818 c1.173,1.191,1.712,3,1.647,5.53c-0.044,1.688-0.785,3.147-2.144,4.217C22.785,29.296,19.388,29.677,17.615,29.677z M17.086,17.973 c-7.006,0.074-7.008,4.023-7.008,5.321c-0.001,3.109,3.598,3.926,6.305,4.27c0.273,0.035,0.48,0.063,0.601,0.089 c0.563,0.101,4.68,0.035,6.855-1.732c0.865-0.702,1.299-1.57,1.326-2.653c0.051-1.958-0.301-3.291-1.073-4.075 c-1.262-1.281-3.834-1.255-6.825-1.222L17.086,17.973z"
+                ></path>
+                <path
+                    fill="#e1f5fe"
+                    d="M15.078,19.043c1.957-0.326,5.122-0.529,4.435,1.304c-0.489,1.304-7.185,2.185-7.185,0.652 C12.328,19.467,15.078,19.043,15.078,19.043z"
+                ></path>
+                </svg>
+                <span class="web4-now">Now!</span>
+                <span class="web4-play">Enroll</span>
+            </button>
+        </div>
+
+    </div>
+    
+
+    <button class="cssbuttons-io-button" onclick="window.location.href='Vcourses-list-html/courses.html'">
+        Tất cả khóa học
+        <div class="icon">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </button>
+    </div>
+
+
+        <!-- web5: đăng kí khóa học-->
+    <div class = 'web5' id="tieudeweb5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       <h1><strong>Đăng kí Khóa học & Mock Test</strong><br>______________________________</h1> 
+
+       <div class="web5-container">
+        <header>Registration Form</header>
+        <form class="web5-form" action="#">
+            <div class="web5-input-box">
+                <label>Full Name</label>
+                <input required="" placeholder="Enter full name" type="text">
+            </div>
+            <div class="web5-column">
+                <div class="web5-input-box">
+                    <label>Phone Number</label>
+                    <input required="" placeholder="Enter phone number" type="tel">
+                </div>
+                <div class="web5-input-box">
+                    <label>Birth Date</label>
+                    <input required="" placeholder="Enter birth date" type="date">
+                </div>
+            </div>
+            <div class="web5-gender-box">
+                <label>Gender</label>
+                <div class="web5-gender-option">
+                    <div class="web5-gender">
+                        <input checked="" name="gender" id="check-male" type="radio">
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="web5-gender">
+                        <input name="gender" id="check-female" type="radio">
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="web5-gender">
+                        <input name="gender" id="check-other" type="radio">
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+            <div class="web5-input-box web5-address">
+                <label>Gmail</label>
+                <input required="" placeholder="Enter street address" type="text">
+                <div class="web5-column">
+                    <div class="web5-select-box">
+                        <select>
+                            <option hidden="">Select course</option>
+                            <option>Speaking for beginner </option>
+                            <option>Speaking advanced</option>
+                            <option>Speaking for self-study learners</option>
+                            <option>Writing for beginner</option>
+                            <option>Writing advanced</option>
+                            <option>Reading and Listening for beginner </option>
+                            <option>Reading and Listening medium level</option>
+                            <option>Reading and Listening Advanced</option>
+                            <option>Road to 6.5 (all skills)</option>
+                            <option>Road to 7+ (only Writing & Speaking)</option>
+                            <option>Online class for Reading & Listening</option>
+                            <option>Online class for Speaking for beginners</option>
+                            <option>Online class for Speaking for Medium</option>
+                            <option>Online class for Writing for beginners</option>
+                            <option>Online class for Writing advanced</option>
+                            <option>Mock Test / Checkpoint for learners</option>
+                        </select>
+                    </div>
+                    <input required="" placeholder="More*" type="text">
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    </div>
+
+
+           <!-- web6: tuyển dụng -->
+    <div class ='web6-container' id="tieudeweb6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1><strong>Tuyển dụng</strong><br>__________________________________________</h1>
+        <img class="hr" src="picture/hr.png" alt="HR Image">
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, {
+                    threshold: 0.1 // Kích hoạt khi 10% của phần tử xuất hiện
+                });
+    
+                const hrImage = document.querySelector('.hr');
+                observer.observe(hrImage);
+            });
+        </script>
+    </div>
+
+
+
+        <!-- web7: tin tức -->
+    <div class="web7-header" id="tieudeweb7">
+        <button class="web7-header-button">Tin tức</button>
+        <div class="web7-slider-container">
+            <div class="web7-slider">
+                <a href="VSR_website_html\Virtual_Speaking_Room.html" class="web7-slide">
+                    <img src="https://github.com/NgPcAnhh/VSR-description-website/blob/main/picture/hello.png?raw=true"
+                     alt="Description of Image" style="max-width: 75%; height: 45%; margin-top: 10%;">
+                    <div class="web7-slide-text">
+                        Ra mắt phần mềm phòng thi nói<br>ảo để tự động hóa quy trình<br> và luyện tập cho học viên.<br><br>12/10/2025
+                    </div>
+                </a>
+        
+                <a href="file2.html" class="web7-slide">
+                    <img src="https://th.bing.com/th/id/OIG3.z8FOYFZDZhasNN6LTfoE?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn" 
+                    alt="Description of Image" style="max-width: 100%; height: 45%; margin-top: 10%;border-radius: 5%;">
+                    <div class="web7-slide-text">
+                        Mở thêm các lớp học online<br>đáp ứng việc phủ sóng việc<br> học IELTS đến toàn quốc.<br><br>04/09/2025
+                    </div>
+                </a>
+        
+                <a href="file3.html" class="web7-slide">
+                    <img src="https://th.bing.com/th/id/OIG1.3mRpS0DUAAVpI4LSVc5G?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn" 
+                    alt="Description of Image" style="max-width: 120%; height:50%; margin-top: 10%;border-radius: 15%;">
+                    <div class="web7-slide-text">
+                        Chúc mừng những sĩ tử của nhà<br>The Liems đã đạt được điểm trên<br>7.5 IELTS trong tháng 7/2024<br><br>04/08/2024
+                    </div>
+                </a>
+        
+                <a href="file4.html" class="web7-slide">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/549/310/non_2x/15-percent-off-special-discount-offer-15-off-sale-of-advertising-campaign-graphics-free-vector.jpg" 
+                    alt="Description of Image" style="max-width: 75%; height: 50%; margin-top: 10%;border-radius: 10%;">
+                    <div class="web7-slide-text">
+                        Khai trương cơ sở mới The Liems<br>tại địa Tầng 4, Tòa 29T2 Hoàng Đạo<br>Thúy,Thanh Xuân. /Discount 15%/<br><br>05/07/2024
+                    </div>
+                </a>
+        
+                <a href="file5.html" class="web7-slide">
+                    <img src="https://amore-architecture.vn/wp-content/uploads/2022/06/Trung-tam-tieng-Anh-To-Huu-7.jpg" 
+                    alt="Description of Image" style="max-width: 75%; height: 50%; margin-top: 10%;border-radius: 10%;">
+                    <div class="web7-slide-text">
+                        Khai trương cơ sở mới The Liems<br>tại địa 414 Nguyễn Văn Cừ, Ngọc Lâm,<br>Long Biên. /Discount 15%/<br><br>01/04/2024
+                    </div>
+                </a>
+        
+                <a href="file6.html" class="web7-slide">
+                    <img src="https://th.bing.com/th/id/OIG4.vXtbPdZJ4sEwLGalXG1x?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn" 
+                    alt="Description of Image" style="max-width: 100%; height: 50%; margin-top: 10%;border-radius:10%;">
+                    <div class="web7-slide-text">
+                        Miễn phí 50 suất kiểm tra Mock test<br>4 kỹ năng, những thí sinh đạt điểm cao<br>sẽ được tặng miễn phí app VSR.<br><br>01/01/2024
+                    </div>
+                </a>
+            </div>
+        
+            <div class="web7-slider-navigation">
+                <button id="web7-prevBtn"><</button>
+                <button id="web7-nextBtn">></button>
+            </div>
+        </div>
+        
+        <script>
+            const slider = document.querySelector('.web7-slider');
+            const prevBtn = document.getElementById('web7-prevBtn');
+            const nextBtn = document.getElementById('web7-nextBtn');
+            const slides = document.querySelectorAll('.web7-slide');
+            const slideWidth = 290; // 260px width + 30px margin
+            const totalSlides = slides.length;
+            let slideIndex = 0;
+        
+            function showSlides() {
+                slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+            }
+        
+            prevBtn.addEventListener('click', () => {
+                if (slideIndex > 0) {
+                    slideIndex--;
+                } else {
+                    slideIndex = totalSlides - 3; // Hiển thị 3 slides cùng lúc
+                }
+                showSlides();
+            });
+        
+            nextBtn.addEventListener('click', () => {
+                if (slideIndex < totalSlides - 3) { // Hiển thị 3 slides cùng lúc
+                    slideIndex++;
+                } else {
+                    slideIndex = 0;
+                }
+                showSlides();
+            });
+        
+            // Khởi tạo slider
+            showSlides();
+        </script>
+    </div>
+    
+
+       <!-- Footer -->
+    <div class="footer-container" id="footer69">
+        <div class="footer">
+            <div class='footer-text'>
+                <h1>The LIEMS IELTS Center</h1>
+                <p>__________________________________________</p>
+                <p>Contact: +84 987654321<br>
+                Hotline: 1900 6996<br>
+                ZALO: 0987654321<br>
+                Gmail: TheLiemsIELTScenter@gmail.com</p>
+                <p>CƠ SỞ THE The Liems<br>
+                *CS1: 55A Võ Văn Dũng, Đống Đa<br>
+                *CS2: 203/76 Hoàng Quốc Việt, Cầu Giấy<br>
+                *CS3: 27/17 Đại Cồ Việt, Hai Bà Trưng<br>
+                *CS4: Tầng 4, Tòa 29T2 Hoàng Đạo Thúy,Thanh Xuân<br>
+                *CS5: 414 Nguyễn Văn Cừ, Ngọc Lâm, Long Biên</p>
+            </div>
+            <img src="picture/certy.png" class='certification'>
+        </div>
+        <div class="partner-container">
+            <h2>Đối Tác</h2>
+            <p>___________________________________________________________________________________________________________</p>
+            <img src="picture/partner.png" class="partner-img">
+        </div>
+        <div class="design-by">
+            <p>Design by Group4-LTWeb-02</p>
+        </div>
+    </div>
+</body>
+</html>
